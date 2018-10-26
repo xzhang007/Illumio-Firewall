@@ -16,7 +16,9 @@ There are 4 classes in the project, in each class I add enough annotations and c
 I think it will be straightforward to read the code.
 
 
-Firewall class--It has two public method: constructor, to read the input file which contains the rules,
+Firewall class--I use 4 hashmap to storage the 4 rules, for each map, the key is the portNumber,
+ the value is the set of IP address in that port number.
+ It has two public method: constructor, to read the input file which contains the rules,
 And accept_packet method, to check if an input is acceptable or blocked.
 
 
@@ -30,6 +32,11 @@ it does not contain all the 4 combination of direction and protocol.
 
 
 Test class--This class contains the main function, I implement it to run the test.
+
+
+In the Firewall class, there are multiple methods:
+Constructor:  Construct a new Firewall class, in this method, it will call SourceReader class to read the file line by line,
+and for each line, it will call a series of private method to help parse the rules, and when it finish, it will add each port number and ip address to the associate rules map
 
 I like the team: the Platform Team, the Policy Team as well as Data Team.
 
