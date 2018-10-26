@@ -1,6 +1,6 @@
 # Illumio-Firewall
 This project is to solve the coding assignment of Illumio about the Firewall
-![Alt text](blob/master/classDiagram.jpg?raw=true "Class Diagram")
+![Alt text](https://github.com/xzhang007/Illumio-Firewall/blob/master/classDiagram.jpg "Class Diagram")
 
 
 The algorithm in this class is brute force, the Tricky point for this problem is how to get different IPs from an IP range, 
