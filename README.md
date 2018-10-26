@@ -35,8 +35,31 @@ Test class--This class contains the main function, I implement it to run the tes
 
 
 In the Firewall class, there are multiple methods:
+
 Constructor:  Construct a new Firewall class, in this method, it will call SourceReader class to read the file line by line,
-and for each line, it will call a series of private method to help parse the rules, and when it finish, it will add each port number and ip address to the associate rules map
+and for each line, it will call a series of private method to help parse the rules, and when it finish, it will add each port number and ip address to the associate rules map.
+
+accept_packet(String direction, String protocol, int port, String ip_address): This method is check if an input will be acceptable or blocked based on the rules.
+
+parseInputLine(String line): This method is to parse the line into 4 parts: direction, protocol, ports and IPs.
+
+dealWithPorts(String direction, String protocol, String ports, String IPs): This method is to check if in the "ports" part, it is a range. If it is a range, we will traverse all the integer between that range.
+
+dealWithIPs(String direction, String protocol, int portNumber, String IPs): This method is to check the "IPs" part, if the IP is a range. If it is a range, we will seperate the start IP and end IP.
+
+addToRules(String direction, String protocol, int portNumber, String IP): This method is to add one port number and one IP address to the associate rules map.
+
+rulesSelection(String direction, String protocol): This method is to get the associate rules map based on the direction and protocol.
+
+generateIPs(String ipStart, String ipEnd): This method is the tricky point of the problem. It is to generate all IPs based on an IP range.
+
+diffIntegerAtPosition3(int[] ip1, int[] ip2, List<String> ipList): deal with IP range like 192.168.1.8-192.168.1.168
+
+diffIntegerAtPosition2(int[] ip1, int[] ip2, List<String> ipList): deal with IP range like 192.168.1.1-192.168.3.9
+
+diffIntegerAtPosition1(int[] ip1, int[] ip2, List<String> ipList): deal with IP range like 192.168.1.8-192.170.3.9
+ 
+diffIntegerAtPosition0(int[] ip1, int[] ip2, List<String> ipList): deal with IP range like 1.2.3.4-192.168.5.7
 
 I like the team: the Platform Team, the Policy Team as well as Data Team.
 
