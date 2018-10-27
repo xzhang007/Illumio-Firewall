@@ -2,7 +2,7 @@
 This project is to solve the coding assignment of Illumio about the Firewall
 ![Alt text](https://github.com/xzhang007/Illumio-Firewall/blob/master/classDiagram.jpg "Class Diagram")
 
-
+【Algorithm】
 The algorithm in this class is brute force, the Tricky point for this problem is how to get different IPs from an IP range, 
 in the worst case in my class, e.g. 1.2.3.4-192.168.5.7, there will be 4 nested for-loop, 
 the time complexity will be 255 ^ 4 ~ 4 billion!
@@ -11,7 +11,7 @@ the time complexity will be 255 ^ 4 ~ 4 billion!
 If I have enough time, I will change the whole algorithm using a data structure: Interval Tree. This method will cover the
 test case like IP address from 0.0.0.0-255.255.255.255.
 
-
+【Classes】
 There are 4 classes in the project, in each class I add enough annotations and comments for each method and important part,
 I think it will be straightforward to read the code.
 
@@ -35,7 +35,7 @@ it does not contain all the 4 combination of direction and protocol.
 Test class--This class contains the main function, I implement it to run the test.
 
 
-
+【Methods in Firewall class】
 In the Firewall class, there are multiple methods:
 
 Constructor:  Construct a new Firewall class, in this method, it will call SourceReader class to read the file line by line,
