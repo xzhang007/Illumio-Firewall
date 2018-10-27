@@ -40,11 +40,14 @@ Test class--This class contains the main function, I implement it to run the tes
 【Methods in Firewall class】
 
 In the Firewall class, there are multiple methods:
+Public Methods:
 
 Constructor:  Construct a new Firewall class, in this method, it will call SourceReader class to read the file line by line,
 and for each line, it will call a series of private method to help parse the rules, and when it finish, it will add each port number and ip address to the associate rules map.
 
 accept_packet(String direction, String protocol, int port, String ip_address): This method is check if an input will be acceptable or blocked based on the rules.
+
+Private Methods:
 
 parseInputLine(String line): This method is to parse the line into 4 parts: direction, protocol, ports and IPs.
 
