@@ -16,6 +16,7 @@ There are 4 classes in the project, in each class I add enough annotations and c
 I think it will be straightforward to read the code.
 
 
+
 Firewall class--I use 4 hashmap to storage the 4 rules, for each map, the key is the portNumber,
  the value is the set of IP address in that port number.
  It has two public method: constructor, to read the input file which contains the rules,
@@ -32,6 +33,7 @@ it does not contain all the 4 combination of direction and protocol.
 
 
 Test class--This class contains the main function, I implement it to run the test.
+
 
 
 In the Firewall class, there are multiple methods:
@@ -60,6 +62,8 @@ diffIntegerAtPosition2(int[] ip1, int[] ip2, List<String> ipList): deal with IP 
 diffIntegerAtPosition1(int[] ip1, int[] ip2, List<String> ipList): deal with IP range like 192.168.1.8-192.170.3.9
  
 diffIntegerAtPosition0(int[] ip1, int[] ip2, List<String> ipList): deal with IP range like 1.2.3.4-192.168.5.7
+
+
 
 I like the team: the Platform Team, the Policy Team as well as Data Team.
 
