@@ -71,7 +71,4 @@ diffIntegerAtPosition1(int[] ip1, int[] ip2, List<String> ipList): deal with IP 
 diffIntegerAtPosition0(int[] ip1, int[] ip2, List<String> ipList): deal with IP range like 1.2.3.4-192.168.5.7
 
 
-
-I like the team: the Platform Team, the Policy Team as well as Data Team.
-
 Thanks for reading.
